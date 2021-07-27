@@ -15,10 +15,12 @@ export default function Login() {
           <div className="header_cont">
             <img src={circle} alt="" className="graphic" />
 
-            <p className="header line-1">
+            <div className="header line-1">
+           
+            
               <span className="one">ONE</span> Room
               <p className="line-2">To Rule Them All</p>
-            </p>
+            </div>
           </div>
           <div className="secondary">
             <span>
