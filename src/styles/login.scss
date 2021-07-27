@@ -1,0 +1,154 @@
+body {
+  background-color: #222831;
+  overflow: hidden;
+}
+.logo {
+  width: 41.5px;
+  height: 39px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 3px;
+  border: solid 0.5px #707070;
+  background-color: #ec615b;
+  font-family: Poppins;
+  color: #f2f2f2;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .col_1 {
+    .header_cont {
+      width: 100%;
+      .graphic {
+        width: 90px;
+        margin-left: 31px;
+      }
+      .header {
+        color: rgb(221, 221, 221);
+        font-family: Dubai;
+        font-size: 40px;
+        margin-top: -50px;
+        
+        .one {
+          font-size: 50px;
+          font-weight: bold;
+        }
+        .line-2 {
+          margin-top: -20px;
+        }
+      }
+    }
+    .secondary {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: 90px;
+      .sec_text {
+        width: 300px;
+        color: grey;
+        font-family: Poppins;
+        font-size: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+  .col_2 {
+    img {
+      width: 600px;
+    }
+  }
+}
+.login {
+  width: 389px;
+  height: 47px;
+  padding: 10px 133px 9px 36px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.28);
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #ec615b;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background-color: #ec615b;
+    color: #eeeeee;
+  }
+  .google {
+    width: 90px;
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+  }
+}
+marquee {
+  font-size: 400px;
+  position: absolute;
+  z-index: -50;
+  cursor: default;
+  user-select: none;
+  font-family: Poppins;
+  font-size: 325px;
+  font-weight: 500;
+  text-align: left;
+  color: #eeeeee07;
+  margin-top: -100px;
+  
+}
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .main {
+    display: block;
+    margin-top: 80px;
+    text-align: center;
+    .graphic {
+      display: none;
+    }
+  }
+  marquee {
+    display: none;
+  }
+  .col_2 {
+    img {
+      width: 100px;
+      margin-top: -80px;;
+    }
+  }
+  .graphic {
+    position: absolute;
+  }
+  .one {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .secondary {
+    .sec_text {
+      display: none;
+    }
+    svg{
+        display: none;
+    }
+  }
+  .header{
+    margin:0;
+
+  }
+  .login{
+      bottom:50px;
+  }
+}
