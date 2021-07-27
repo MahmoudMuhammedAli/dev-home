@@ -1,6 +1,15 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DeveHome 
+Deve home is a web application where develpers come to hangout and get help on their projects
+
+Sign in with google to get access to the chat room and the code editor:
+<br/><br/>
+![image](https://user-images.githubusercontent.com/70591959/127074872-e3ca7055-0b6c-4ad7-99ff-b5420173f9b4.png)
+
+check out the current design: https://scene.zeplin.io/project/60f94692b24ad91391e92d2e
+
+
+
 
 ## Available Scripts
 
