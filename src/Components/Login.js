@@ -1,9 +1,11 @@
 import React from "react";
 import "../styles/css/login.css";
-import circleMob from "../assets/circleMob.svg";
 import circle from "../assets/circle.svg";
 import chatter from "../assets/chatter.svg";
 import Google from "../assets/Google.svg";
+import firebase from "firebase/app";
+
+import { auth } from "../firebase";
 export default function Login() {
   return (
     <>
@@ -13,10 +15,12 @@ export default function Login() {
           <div className="header_cont">
             <img src={circle} alt="" className="graphic" />
 
-            <p className="header line-1">
+            <div className="header line-1">
+           
+            
               <span className="one">ONE</span> Room
               <p className="line-2">To Rule Them All</p>
-            </p>
+            </div>
           </div>
           <div className="secondary">
             <span>
@@ -47,11 +51,18 @@ export default function Login() {
           <img src={chatter} alt="" />
         </div>
       </div>
-      <button className="login">
+      <button
+        onClick={() =>
+          auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())
+        }
+        className="login"
+      >
         LOGIN WITH GOOGLE
         <img src={Google} alt="" className="google" />
       </button>
-      <marquee behavior="alternate" scrollamount="5">DEVE HOME</marquee>
+      <marquee behavior="alternate" scrollamount="5">
+        DEVE HOME
+      </marquee>
     </>
   );
 }
