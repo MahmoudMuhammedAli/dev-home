@@ -31,3 +31,19 @@
     }
   }
 }
+.loading_pic{
+    width: 150px; 
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50% , -50%);
+    img{
+        width:200px;
+    }
+    h1{
+        color:white;
+        text-transform:capitalize;
+        letter-spacing:5px;
+        font-weight: bolder;
+    }
+}

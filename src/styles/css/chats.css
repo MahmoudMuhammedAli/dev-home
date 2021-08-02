@@ -44,3 +44,23 @@
 .chats_view .navbar .links .signOut {
   margin: 13px;
 }
+
+.loading_pic {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loading_pic img {
+  width: 200px;
+}
+
+.loading_pic h1 {
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-weight: bolder;
+}

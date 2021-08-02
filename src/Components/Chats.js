@@ -3,8 +3,12 @@ import { useHistory } from "react-router-dom";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase";
 import { useAuth } from "../contexts/AuthContext";
+import Loading from "./Loading"
 //styles
 import "../styles/css/chats.css";
+import logo from "../assets/logo.svg";
+
+//dependencies
 import axios from "axios";
 
 export default function Chats() {
@@ -21,7 +25,7 @@ export default function Chats() {
 
     return new File([date], "userPhoto.jpg", { type: "image/jpeg" });
   };
-  console.log(user); 
+  console.log(user);
   useEffect(() => {
     // prevent the user from accessing the chat with out login
     if (!user) {
@@ -32,30 +36,32 @@ export default function Chats() {
     //signIn if you have chatEngine profile
     axios
       .get("https://api.chatengine.io/users/me/", {
-       
         headers: {
           "project-id": "013128ed-bcd2-484a-8d74-0ade7cb2c318",
           "user-name": user.email,
           "user-secret": user.uid,
         },
       })
-      .then(() => { 
+      .then(() => {
         setLoading(false);
       })
       //create a profile if you don't have one
       .catch(() => {
         let Data = new FormData();
         Data.append("email", user.email);
-        Data.append("username", user.displayName);
+        Data.append("username", user.email);
         Data.append("secret", user.uid);
 
         getFile(user.photoURL).then((avatar) => {
           Data.append("avatar", avatar, avatar.name);
-          axios.post("https://api.chatengine.io/users", Data, {
-            headers: { "private-key": "899a3cba-2a68-400c-b81e-051de9a65241" },
-          })
-          .then(() => setLoading(false))
-          .catch((error) => console.log(error))
+          axios
+            .post("https://api.chatengine.io/users", Data, {
+              headers: {
+                "private-key": "899a3cba-2a68-400c-b81e-051de9a65241",
+              },
+            })
+            .then(() => setLoading(false))
+            .catch((error) => console.log(error));
         });
       });
   }, [user, history]);
@@ -68,12 +74,12 @@ export default function Chats() {
     history.push("/");
   }
 
-  //because there is no user once the page loads 
-  if(!user || loading)  
-  return (
-    <h1 className="loading"> loading...</h1>
-    )
-  
+  //because there is no user once the page loads
+  if (!user || loading)
+    return (
+      <Loading/>
+    );
+
   return (
     <div className="chats_view">
       <div className="navbar">
