@@ -15,7 +15,6 @@ export function AuthProvider({ children }) {
         setUser(user);
         setLoading(false);
          if(user){
-             console.log(user)
              history.push('/chats')
             }
     });

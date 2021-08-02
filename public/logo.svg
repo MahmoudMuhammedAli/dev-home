@@ -1,0 +1,10 @@
+<svg id="Component_11_1" data-name="Component 11 – 1" xmlns="http://www.w3.org/2000/svg" width="82" height="96.537" viewBox="0 0 82 96.537">
+  <g id="Component_2_4" data-name="Component 2 – 4">
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="41" cy="40" rx="41" ry="40" fill="#ec615b"/>
+    <path id="Polygon_1" data-name="Polygon 1" d="M16.558,6.092a5,5,0,0,1,8.273,0L36.087,22.67a5,5,0,0,1-4.137,7.809H9.439A5,5,0,0,1,5.3,22.67Z" transform="translate(41 56.053) rotate(102)" fill="#ec615b"/>
+  </g>
+  <g id="Component_2_5" data-name="Component 2 – 5">
+    <ellipse id="Ellipse_2-2" data-name="Ellipse 2" cx="41" cy="40" rx="41" ry="40" fill="#ec615b"/>
+  </g>
+  <text id="_" data-name="&lt;/&gt;" transform="translate(40 54)" fill="#fff" font-size="40" font-family="MicrosoftYaHeiUI-Bold, Microsoft YaHei UI" font-weight="700"><tspan x="-39.902" y="0">&lt;/&gt;</tspan></text>
+</svg>

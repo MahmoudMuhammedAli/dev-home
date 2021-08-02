@@ -9,6 +9,7 @@ import "../styles/css/chats.css";
 export default function Chats() {
   const history = useHistory()
   const [nav, setNav] = useState("Wanna Code?");
+  const {user} = useAuth();
 
   function changeView(){
     nav==="Wanna Code?"? 
@@ -28,6 +29,7 @@ export default function Chats() {
           <div className="link signOut" onClick={signOut}>Sign out</div>
         </div>
       </div>
+      
       <ChatEngine
         height= "calc(100vh - 66px)"
         projectId="
