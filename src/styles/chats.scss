@@ -1,1 +1,32 @@
- 
+.chats_view {
+  .navbar {
+    display: grid;
+    grid-template-columns: 0.5fr 6fr;
+    justify-items: center;
+    align-items: center;
+    height: max-content;
+    background-color: rgba(66, 66, 66, 0.238);
+    .logo {
+      display: inline;
+      margin: 10px;
+    }
+    .links {
+      cursor: pointer;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      text-align: right;
+      .link {
+        color: rgba(255, 255, 255, 0.578);
+        margin: 10px;
+      }
+      .code {
+        color: #ec615b;
+        font-size: 20px;
+      }
+      .signOut{
+          margin-top: 10px;
+      }
+    }
+  }
+}
