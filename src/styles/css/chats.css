@@ -1,16 +1,15 @@
 .chats_view .navbar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.5fr 6fr;
-      grid-template-columns: 0.5fr 6fr;
-  justify-items: center;
+  -ms-grid-columns: 0.5fr 10fr;
+      grid-template-columns: 0.5fr 10fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: rgba(66, 66, 66, 0.238);
+  background-color: white;
 }
 
 .chats_view .navbar .logo {
@@ -20,26 +19,28 @@
 
 .chats_view .navbar .links {
   cursor: pointer;
-  width: 100%;
+  /* width: 100%;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-right: 5%;
   text-align: right;
 }
 
 .chats_view .navbar .links .link {
-  color: rgba(255, 255, 255, 0.578);
-  margin: 10px;
+  color: rgba(0, 0, 0, 0.755);
 }
 
 .chats_view .navbar .links .code {
-  color: #ec615b;
+  color: #f8423c;
   font-size: 20px;
+  margin: 10px;
+  padding-right: 3%;
 }
 
 .chats_view .navbar .links .signOut {
-  margin-top: 10px;
+  margin: 13px;
 }

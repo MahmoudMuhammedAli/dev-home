@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { useHistory } from "react-router-dom"
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase";
+import {useAuth} from "../contexts/AuthContext"
 //styles
 import "../styles/css/chats.css";
 

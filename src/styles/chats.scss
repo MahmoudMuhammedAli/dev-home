@@ -1,31 +1,32 @@
 .chats_view {
   .navbar {
     display: grid;
-    grid-template-columns: 0.5fr 6fr;
-    justify-items: center;
+    grid-template-columns: 0.5fr 10fr;
     align-items: center;
     height: max-content;
-    background-color: rgba(66, 66, 66, 0.238);
+    background-color: rgb(255, 255, 255);
     .logo {
       display: inline;
       margin: 10px;
     }
     .links {
       cursor: pointer;
-      width: 100%;
+     /* width: 100%;*/
       display: flex;
       justify-content: flex-end;
+      padding-right: 5%;
       text-align: right;
       .link {
-        color: rgba(255, 255, 255, 0.578);
-        margin: 10px;
+        color: rgba(0, 0, 0, 0.755);
       }
       .code {
-        color: #ec615b;
+        color: #f8423c;
         font-size: 20px;
+        margin: 10px;
+        padding-right: 3%;
       }
       .signOut{
-          margin-top: 10px;
+        margin: 13px;
       }
     }
   }
