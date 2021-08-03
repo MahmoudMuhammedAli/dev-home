@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 body {
   background-color: #222831;
   overflow: hidden;
@@ -37,7 +38,7 @@ body {
         margin-left: 90px;
         .one {
           font-size: 50px;
-          font-weight: bold; 
+          font-weight: bold;
         }
         .line-2 {
           margin-top: -20px;
@@ -106,7 +107,6 @@ marquee {
   text-align: left;
   color: #eeeeee07;
   margin-top: -100px;
-  
 }
 @media (max-width: 768px) {
   body {
@@ -126,7 +126,7 @@ marquee {
   .col_2 {
     img {
       width: 100px;
-      margin-top: -80px;;
+      margin-top: -80px;
     }
   }
   .graphic {
@@ -140,15 +140,14 @@ marquee {
     .sec_text {
       display: none;
     }
-    svg{
-        display: none;
+    svg {
+      display: none;
     }
   }
-  .header{
-    margin:0;
-
+  .header {
+    margin: 0;
   }
-  .login{
-      bottom:50px;
+  .login {
+    bottom: 50px;
   }
 }

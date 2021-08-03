@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase";
@@ -6,10 +6,10 @@ import { useAuth } from "../contexts/AuthContext";
 import Loading from "./Loading"
 //styles
 import "../styles/css/chats.css";
-import logo from "../assets/logo.svg";
 
 //dependencies
 import axios from "axios";
+
 
 export default function Chats() {
   const history = useHistory();
@@ -25,7 +25,7 @@ export default function Chats() {
 
     return new File([date], "userPhoto.jpg", { type: "image/jpeg" });
   };
-  console.log(user);
+  
   useEffect(() => {
     // prevent the user from accessing the chat with out login
     if (!user) {
@@ -37,7 +37,7 @@ export default function Chats() {
     axios
       .get("https://api.chatengine.io/users/me/", {
         headers: {
-          "project-id": "013128ed-bcd2-484a-8d74-0ade7cb2c318",
+          "project-id": process.env.REACT_APP_CHAT_ENGINE_ID,
           "user-name": user.email,
           "user-secret": user.uid,
         },
@@ -57,7 +57,7 @@ export default function Chats() {
           axios
             .post("https://api.chatengine.io/users", Data, {
               headers: {
-                "private-key": "899a3cba-2a68-400c-b81e-051de9a65241",
+                "private-key": process.env.REACT_APP_CHAT_ENGINE_KEY,
               },
             })
             .then(() => setLoading(false))
@@ -96,8 +96,7 @@ export default function Chats() {
 
       <ChatEngine
         height="calc(100vh - 66px)"
-        projectID="
-        013128ed-bcd2-484a-8d74-0ade7cb2c318"
+        projectID={ process.env.REACT_APP_CHAT_ENGINE_ID}
         userName={user.email}
         userSecret={user.uid}
       />
