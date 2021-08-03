@@ -10,6 +10,7 @@ import "../styles/css/chats.css";
 //dependencies
 import axios from "axios";
 
+
 export default function Chats() {
   const history = useHistory();
   const [nav, setNav] = useState("Wanna Code?");
@@ -24,7 +25,7 @@ export default function Chats() {
 
     return new File([date], "userPhoto.jpg", { type: "image/jpeg" });
   };
-  console.log(user);
+  
   useEffect(() => {
     // prevent the user from accessing the chat with out login
     if (!user) {
