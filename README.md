@@ -4,7 +4,7 @@ Deve home is a web application where develpers come to hangout and get help on t
 
 Sign in with google to get access to the chat room and the code editor:
 <br/><br/>
-![image](https://user-images.githubusercontent.com/70591959/127074872-e3ca7055-0b6c-4ad7-99ff-b5420173f9b4.png)
+![image](https://user-images.githubusercontent.com/70591959/128180644-787171d3-e0bc-4792-b7da-57623f94293e.png)
 
 <br/> <br/>
 Join a room or create one: 
