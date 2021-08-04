@@ -1,0 +1,14 @@
+.editor_cont{
+    
+    .editor_header{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        .img_cont{
+            img{
+                width:30px;
+                height:30px;
+            }
+        }
+    }
+}
