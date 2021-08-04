@@ -18,8 +18,8 @@ export default function Login() {
             <div className="header line-1">
            
             
-              <span className="one">ONE</span> Room
-              <p className="line-2">To Rule Them All</p>
+              <span className="one">ONE</span> App
+              <p className="line-2">To Chill, Chat and Code</p>
             </div>
           </div>
           <div className="secondary">
@@ -41,7 +41,7 @@ export default function Login() {
 
             <span>
               <p className="sec_text">
-                log in with one click and enjoy chatting with everybody
+                log in with one click to access chat rooms and code mirror. Have Fun!
               </p>
             </span>
           </div>
