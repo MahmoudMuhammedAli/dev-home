@@ -6,7 +6,13 @@ Sign in with google to get access to the chat room and the code editor:
 <br/><br/>
 ![image](https://user-images.githubusercontent.com/70591959/127074872-e3ca7055-0b6c-4ad7-99ff-b5420173f9b4.png)
 
+<br/> <br/>
+Join a room or create one: 
+<br/> <br/>
+![image](https://user-images.githubusercontent.com/70591959/128178816-dfbace7a-a3df-4680-a5d8-2efd24744f25.png)
+
 check out the current design: https://scene.zeplin.io/project/60f94692b24ad91391e92d2e
+
 
 
 
