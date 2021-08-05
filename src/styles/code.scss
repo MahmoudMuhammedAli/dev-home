@@ -35,6 +35,9 @@
         background: linear-gradient( rgb(0, 0, 0), rgb(37, 41, 50) ) !important;
         background-image: none;
     }
+    .section{
+        height: max-content;
+    }
     .sec-1 {
       flex-direction: column;
       margin-top: 10px;

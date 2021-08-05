@@ -44,6 +44,11 @@
     background: linear-gradient(black, #252932) !important;
     background-image: none;
   }
+  .code_view .section {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
   .code_view .sec-1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
