@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+.code_view .section {
+  height: 50vh;
+}
+
 .code_view .sec-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,8 +39,10 @@
 }
 
 @media (max-width: 600px) {
-  .code_view body {
-    overflow: visible !important;
+  .code_view .code_view {
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(#252932)) !important;
+    background: linear-gradient(black, #252932) !important;
+    background-image: none;
   }
   .code_view .sec-1 {
     -webkit-box-orient: vertical;
@@ -46,16 +52,18 @@
     margin-top: 10px;
   }
   .code_view .backToChat a {
-    position: relative !important;
+    position: absolute !important;
     border-radius: 15px;
     border: none;
     font-size: 16px;
-    right: 0px;
-    left: 0px;
+    right: 0;
+    left: 0;
+    top: 200%;
+    text-align: center;
+    margin-bottom: 20px;
   }
   .code_view iframe {
     margin-top: 40px;
     height: 350px;
-    background-color: white;
   }
 }
