@@ -11,11 +11,16 @@ Join a room or create one:
 <br/> <br/>
 ![image](https://user-images.githubusercontent.com/70591959/128178816-dfbace7a-a3df-4680-a5d8-2efd24744f25.png)
 
+<br/> <br/>
+
+Clicking Wanna code sends you to the code mirror page in which you can type youre HTML, CSS, JS code and watch it come to life immidietly.
+
+![image](https://user-images.githubusercontent.com/70591959/128278099-1c726592-b797-4684-a20d-fc8ed7138143.png)
+
+
+<br/> <br/>
+
 check out the current design: https://scene.zeplin.io/project/60f94692b24ad91391e92d2e
-
-
-
-
 
 ## Available Scripts
 
