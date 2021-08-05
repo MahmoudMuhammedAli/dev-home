@@ -39,6 +39,7 @@
   font-size: 20px;
   margin: 10px;
   padding-right: 3%;
+  text-decoration: none;
 }
 
 .chats_view .navbar .links .signOut {

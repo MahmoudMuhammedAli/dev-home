@@ -3,13 +3,14 @@ import { useHistory } from "react-router-dom";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase";
 import { useAuth } from "../contexts/AuthContext";
-import Loading from "./Loading"
+import Loading from "./Loading";
+import Code from "./Code";
 //styles
 import "../styles/css/chats.css";
 
 //dependencies
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 
 export default function Chats() {
   const history = useHistory();
@@ -25,7 +26,7 @@ export default function Chats() {
 
     return new File([date], "userPhoto.jpg", { type: "image/jpeg" });
   };
-  
+
   useEffect(() => {
     // prevent the user from accessing the chat with out login
     if (!user) {
@@ -75,19 +76,16 @@ export default function Chats() {
   }
 
   //because there is no user once the page loads
-  if (!user || loading)
-    return (
-      <Loading/>
-    );
+  if (!user || loading) return <Loading />;
 
   return (
     <div className="chats_view">
       <div className="navbar">
         <div className="logo">Deve Home</div>
         <div className="links">
-          <div className="link code" onClick={changeView}>
+          <Link to="/code" className="link code" onClick={changeView}>
             {nav}
-          </div>
+          </Link>
           <div className="link signOut" onClick={signOut}>
             Sign out
           </div>
@@ -96,7 +94,7 @@ export default function Chats() {
 
       <ChatEngine
         height="calc(100vh - 66px)"
-        projectID={ process.env.REACT_APP_CHAT_ENGINE_ID}
+        projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
         userName={user.email}
         userSecret={user.uid}
       />

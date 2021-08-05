@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 body {
   background-color: #222831;
-  overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.logo {
+body .login_view {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body .logo {
   width: 41.5px;
   height: 39px;
   margin-top: 10px;
@@ -18,7 +26,7 @@ body {
   line-height: 1.5;
 }
 
-.main {
+body .main {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,16 +38,16 @@ body {
           align-items: center;
 }
 
-.main .col_1 .header_cont {
+body .main .col_1 .header_cont {
   width: 100%;
 }
 
-.main .col_1 .header_cont .graphic {
+body .main .col_1 .header_cont .graphic {
   width: 90px;
   margin-left: 31px;
 }
 
-.main .col_1 .header_cont .header {
+body .main .col_1 .header_cont .header {
   color: #dddddd;
   font-family: Dubai;
   font-size: 40px;
@@ -47,16 +55,16 @@ body {
   margin-left: 90px;
 }
 
-.main .col_1 .header_cont .header .one {
+body .main .col_1 .header_cont .header .one {
   font-size: 50px;
   font-weight: bold;
 }
 
-.main .col_1 .header_cont .header .line-2 {
+body .main .col_1 .header_cont .header .line-2 {
   margin-top: -20px;
 }
 
-.main .col_1 .secondary {
+body .main .col_1 .secondary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +76,7 @@ body {
   margin-left: 90px;
 }
 
-.main .col_1 .secondary .sec_text {
+body .main .col_1 .secondary .sec_text {
   width: 300px;
   color: grey;
   font-family: Poppins;
@@ -76,11 +84,11 @@ body {
   margin-left: 20px;
 }
 
-.main .col_2 img {
+body .main .col_2 img {
   width: 600px;
 }
 
-.login {
+body .login {
   width: 389px;
   height: 47px;
   padding: 10px 133px 9px 36px;
@@ -104,20 +112,21 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-.login:hover {
+body .login:hover {
   background-color: #ec615b;
   color: #eeeeee;
 }
 
-.login .google {
+body .login .google {
   width: 90px;
   position: absolute;
   right: 10px;
   bottom: -20px;
 }
 
-marquee {
+body marquee {
   font-size: 400px;
+  height: 350px;
   position: absolute;
   z-index: -50;
   cursor: default;
@@ -134,41 +143,41 @@ marquee {
 }
 
 @media (max-width: 768px) {
-  body {
+  body body {
     text-align: center;
   }
-  .main {
+  body .main {
     display: block;
     margin-top: 80px;
     text-align: center;
   }
-  .main .graphic {
+  body .main .graphic {
     display: none;
   }
-  marquee {
+  body marquee {
     display: none;
   }
-  .col_2 img {
+  body .col_2 img {
     width: 100px;
     margin-top: -80px;
   }
-  .graphic {
+  body .graphic {
     position: absolute;
   }
-  .one {
+  body .one {
     text-align: center;
     font-size: 1rem;
   }
-  .secondary .sec_text {
+  body .secondary .sec_text {
     display: none;
   }
-  .secondary svg {
+  body .secondary svg {
     display: none;
   }
-  .header {
+  body .header {
     margin: 0;
   }
-  .login {
+  body .login {
     bottom: 50px;
   }
 }
