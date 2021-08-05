@@ -8,7 +8,7 @@ import firebase from "firebase/app";
 import { auth } from "../firebase";
 export default function Login() {
   return (
-    <>
+    <div className="login_view">
       <div className="logo">DEVE HOME</div>
       <div className="main">
         <div className="col_1">
@@ -16,8 +16,6 @@ export default function Login() {
             <img src={circle} alt="" className="graphic" />
 
             <div className="header line-1">
-           
-            
               <span className="one">ONE</span> App
               <p className="line-2">To Chill, Chat and Code</p>
             </div>
@@ -41,7 +39,8 @@ export default function Login() {
 
             <span>
               <p className="sec_text">
-                log in with one click to access chat rooms and code mirror. Have Fun!
+                log in with one click to access chat rooms and code mirror. Have
+                Fun!
               </p>
             </span>
           </div>
@@ -63,6 +62,6 @@ export default function Login() {
       <marquee behavior="alternate" scrollamount="5">
         DEVE HOME
       </marquee>
-    </>
+    </div>
   );
 }
