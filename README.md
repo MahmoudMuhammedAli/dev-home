@@ -1,6 +1,6 @@
 
 # DeveHome https://devehome.netlify.app/chats 
-DeveHome is a web application where develpers come to hangout and get help on their projects
+DeveHome is a web application where developers come to hangout and get help on their projects
 
 ## Sign in with google to get access to the chat room and the code editor:
 <br/><br/>
